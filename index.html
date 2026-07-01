@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Preview Demo</title>
+  </head>
+  <body>
+    <main class="workspace">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">实时预览演示</p>
+          <h1>方诣</h1>
+          <p class="lede">
+            这是一个专门用来练习批注式修改的小页面。你可以指出按钮、卡片、颜色、间距或文案，我会改代码并让页面热更新。
+          </p>
+          <div class="actions">
+            <button class="primary" type="button">开始批注</button>
+            <button class="ghost" type="button">查看示例</button>
+          </div>
+        </div>
+        <div class="preview-panel" aria-label="批注流程示意">
+          <div class="panel-topbar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="comment-card active">
+            <strong>1. 打开预览</strong>
+            <p>页面运行在 localhost:5173。</p>
+          </div>
+          <div class="comment-card">
+            <strong>2. 说出修改</strong>
+            <p>例如“标题太大”“按钮换成蓝色”。</p>
+          </div>
+          <div class="comment-card">
+            <strong>3. 我来更新</strong>
+            <p>保存后浏览器会自动刷新。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="board" aria-label="可批注区域">
+        <article>
+          <span class="tag">Layout</span>
+          <h2>布局</h2>
+          <p>可以批注这一块的宽度、对齐、留白、响应式表现。</p>
+        </article>
+        <article>
+          <span class="tag">Color</span>
+          <h2>配色</h2>
+          <p>可以要求调整主色、背景、按钮层级或对比度。</p>
+        </article>
+        <article>
+          <span class="tag">Copy</span>
+          <h2>文案</h2>
+          <p>可以把页面文字改得更正式、更简短或更像产品界面。</p>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
